@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="15dp"
+    tools:context=".DangKyActivity"
+   >
+
+    <TextView
+        android:gravity="center"
+        android:text="Dang Ky"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="50dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edHoten"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ho ten"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edDangkyusername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        android:layout_marginBottom="20dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edDangkypassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Create Password"
+            android:inputType="textPassword"
+            android:maxLines="1"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        android:layout_marginBottom="20dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edNhaplaipassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:maxLines="1"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnDangky"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign up"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FF5722"/>
+
+</LinearLayout>
